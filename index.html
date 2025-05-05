@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MutalStroke - Mobile Stroke Unit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MutalStroke</h1>
+    <p>Your Mobile Stroke Unit & Remote Neurologist Support System</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Real-Time Stroke Response</h2>
+      <p>
+        MutalStroke connects field technicians with remote neurologists to improve stroke care.
+        Collect and transmit patient data, assess tPA eligibility, and save lives — faster.
+      </p>
+    </section>
+
+    <section class="patient-form">
+      <h2>Stroke Patient Intake Form</h2>
+      <form id="strokeForm">
+        <label>Name: <input type="text" name="name" required /></label>
+        <label>Age: <input type="number" name="age" required /></label>
+        <label>Sex:
+          <select name="sex">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Time of Stroke Onset: <input type="time" name="onset" required /></label>
+        <label>Time of Arrival: <input type="time" name="arrival" required /></label>
+        <label>Initial Symptoms: <input type="text" name="symptoms" required /></label>
+        <label>NIHSS Score: <input type="number" name="nihss" required /></label>
+        <label>Blood Pressure: <input type="text" name="bp" required /></label>
+        <label>Heart Rate: <input type="number" name="hr" required /></label>
+        <label>Oxygen Saturation (%): <input type="number" name="spo2" required /></label>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MutalStroke. Powered by CS 120 Innovation.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
